@@ -1,6 +1,6 @@
-# Phaser 3 Typescript Webpack Template
+# Three.js Typescript Webpack Template
 
-A Phaser 3  project template with Typescript support, ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/)
+A Three.js  project template with Typescript support, ES6 support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/)
 that includes hot-reloading for development and production-ready builds.
 
 Loading assets via JavaScript module `import` and Typescript module `require` is also supported.
