@@ -1,23 +1,5 @@
-import "phaser";
-import config from "./config/config";
-import GameScene from "./scenes/gamescene";
+import { Version } from './version';
+let THREE = require('three');
+let threejsdiv = document.getElementById('ThreeJS');
 
-class MyGame extends Phaser.Game {
-
-  version:string;
-
-  constructor(config: Phaser.Types.Core.GameConfig) {
-    super(config);
-
-    this.scene.add("GameScene", GameScene);
-    this.scene.start("GameScene");
-  }
-
-  getVersion() {
-    return this.version;
-  }
-}
-
-window.onload = function() {
-  var myGame = new MyGame(config);
-};
+threejsdiv.innerHTML += `three.js version ${THREE.REVISION}<br>thteejs-typescript-webpack version ${Version}`;
